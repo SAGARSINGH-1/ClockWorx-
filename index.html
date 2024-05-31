@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ClockWorx</title>
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🕰️</text></svg>" />
+
+  <!-- styles  -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shepherd.js@8.3.1/dist/css/shepherd.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/shepherd.js@8.3.1/dist/js/shepherd.min.js"></script>
+</head>
+
+<body class="bg-light text-dark">
+  <div class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h1 id="header" class="text-center">ClockWorx ⏰</h1>
+    </div>
+    <div class="bento-grid">
+      <div class="bento-item bg-white border" id="current-time-date">
+        <h2>Time & Date 📅</h2>
+        <h3 id="time" class="text-success"></h3>
+        <h4 id="date" class="text-success-emphasis"></h4>
+      </div>
+      <div class="bento-item bg-white border" id="stopwatch">
+        <h2>Stopwatch ⏱️</h2>
+        <h3 id="stopwatch-time">00:00:00</h3>
+        <button id="start-stopwatch" class="btn btn-primary">Start</button>
+        <button id="stop-stopwatch" class="btn btn-secondary">Stop</button>
+        <button id="reset-stopwatch" class="btn btn-danger">Reset</button>
+      </div>
+      <div class="bento-item bg-white border" id="pomodoro-timer">
+        <h2>Pomodoro Timer 🍅</h2>
+        <h3 id="timer-time">25:00</h3>
+        <div class="btn-group mb-2" role="group">
+          <button id="work-mode" class="btn btn-outline-primary">Work</button>
+          <button id="short-break-mode" class="btn btn-outline-success">
+            Short Break
+          </button>
+          <button id="long-break-mode" class="btn btn-outline-info">
+            Long Break
+          </button>
+        </div>
+        <button id="start-timer" class="btn btn-primary">Start</button>
+        <button id="reset-timer" class="btn btn-danger">Reset</button>
+      </div>
+    </div>
+    <footer class="text-center mt-4">
+      <p>Made with ❤️ by <span class="text-primary">Sagar Singh</span></p>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="./script.js"></script>
+  <script type="module" src="./shepherd.js"></script>
+</body>
+
+</html>
